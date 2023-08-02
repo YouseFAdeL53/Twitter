@@ -72,5 +72,5 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     preLoader.classList.add("loaded");
     document.body.style.overflow = "auto";
-  }, 2000)
+  }, 1500)
 })
