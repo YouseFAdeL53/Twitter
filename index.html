@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/boxicons.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="shortcut icon" href="image/logo-up.png">
+  <title>Twitter Clone</title>
+</head>
+
+<body class="bg-black">
+  <div class="preloader">
+    <img src="image/logo-up.png" alt="">
+  </div>
+  <div class="page mt-3">
+    <!-- ? Container -->
+    <div class="container mx-auto">
+      <!--ToDO Start Content -->
+      <div class="content flex items-start h-screen">
+        <section class="left-content w-[15%] lg:w-[20%] h-screen text-center p-2 pt-0">
+          <a href="index.html" class="logo text-white gap-2 flex items-center mb-4 p-2">
+            <i class='bx bxl-xing text-4xl basis-[100%] lg:basis-[25%] text-center'></i>
+            <span class="font-bold italic text-lg mt-1 flex-1 text-left hidden lg:block">Twitter Clone</span>
+          </a>
+          <!-- ? Start List -->
+          <ul class="links">
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all bg-[#1c1c1c] hover:bg-[#1c1c1c]">
+                <i class='bx bx-home text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Home</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-search text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Explore</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-bell text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Notifications</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-chat text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Messages</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-list-ul text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">List</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-bookmark text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Bookmarks</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-command text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Communities</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-badge-check text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Verified</span>
+              </a>
+            </li>
+            <li class="item mb-2">
+              <a href="#home"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-user text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">Profile</span>
+              </a>
+            </li>
+            <li class="item mb-5">
+              <a href="#more"
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <i class='bx bx-dots-horizontal-rounded text-2xl basis-[100%] lg:basis-[25%] text-center'></i>
+                <span class="font-bold text-lg flex-1 text-left hidden lg:block">More</span>
+              </a>
+            </li>
+            <button class="main-btn mb-5">
+              <i class="fa-solid fa-feather text-2xl block lg:hidden"></i>
+              <span class="hidden lg:block">Post</span>
+            </button>
+            <li class="item mb-2">
+              <a
+                class="nav-item text-white flex items-center justify-center gap-2 p-2 rounded-2xl transition-all hover:bg-[#1c1c1c]">
+                <img src="image/user.webp" class="w-10 rounded-full" alt="">
+                <div class="info hidden lg:block">
+                  <h2 class="mb-0 text-lg font-bold select-none">YouseF AdeL</h2>
+                  <span class="text-sm text-[#777] select-none">@YouseFAdeL53</span>
+                </div>
+                <i class='bx bx-dots-horizontal-rounded ml-auto text-xl cursor-pointer'></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="middle-content w-[85%] lg:w-[55%] h-full p-2 pr-0 border-r border-r-[#1c1c1c]">
+          <h2 class="text-xl font-bold text-white p-2">Home</h2>
+          <ul class="follwing flex items-center border-t border-t-[#1c1c1c]">
+            <li
+              class="p-4 cursor-pointer basis-1/2 text-center relative font-bold border-r border-r-[#1c1c1c] text-[#fff3] transition-all hover:bg-[#1c1c1c] rounded-sm active">
+              For You</li>
+            <li
+              class="p-4 cursor-pointer basis-1/2 text-center relative text-[#fff3] font-bold transition-all hover:bg-[#1c1c1c] rounded-sm">
+              Following</li>
+          </ul>
+          <!-- ? Start TextArea -->
+          <div class="content border-b border-t border-t-[#1c1c1c] border-b-[#1c1c1c]">
+            <div class="postArea flex items-start gap-2 p-3">
+              <img src="image/user.webp" class="w-14 rounded-full" alt="">
+              <textarea maxlength="100" placeholder="What Is Happing ?!"
+                class=" textArea border-b border-b-[#1c1c1c] w-[100%] h-24 bg-black p-2 outline-none resize-none text-white font-medium"></textarea>
+            </div>
+            <ul class="items p-0 m-0 flex gap-2 pl-0 lg:pl-[74px] mb-2 items-center">
+              <li class="item text-[#2196f3] text-2xl cursor-pointer relative">
+                <i class='bx bx-image-alt'></i>
+                <span class="tooltip">Image</span>
+              </li>
+              <li class="item text-[#2196f3] text-2xl cursor-pointer relative">
+                <i class='bx bxs-file-gif'></i>
+                <span class="tooltip">Gif</span>
+              </li>
+              <li class="item text-[#2196f3] text-2xl cursor-pointer relative">
+                <i class='bx bx-poll'></i>
+                <span class="tooltip">Poll</span>
+              </li>
+              <li class="item text-[#2196f3] text-2xl cursor-pointer relative">
+                <i class='bx bx-wink-smile'></i>
+                <span class="tooltip">Emoji</span>
+              </li>
+              <li class="item text-[#2196f3] text-2xl cursor-pointer relative">
+                <i class='bx bx-calendar-alt'></i>
+                <span class="tooltip">Calender</span>
+              </li>
+              <li class="item text-[#2196f3] text-2xl pointer-events-none opacity-30 ">
+                <i class='bx bx-map'></i>
+              </li>
+              <div class="right ml-auto relative flex items-center gap-2">
+                <span class="progress"><span class="linear"></span><span class="bg"></span></span>
+                <button
+                  class="btn bg-[#2196f3] p-2 w-28 rounded-full text-white mr-0 lg:mr-2 text-sm transition-all hover:bg-[#2196f3c7] post">Post</button>
+              </div>
+            </ul>
+          </div>
+          <!-- ? End TextArea -->
+          <!-- Start Content -->
+          <div class="content mt-3">
+            <!-- First Content -->
+            <div class="box p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-2 relative direction">
+                <img src="image/content/7.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-xs md:text-lg lg:text-lg arabic">الشيخ الشعراوي</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@Alsharrwi, 22m</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <div class="quran w-fit mx-auto relative">
+                  <img src="image/content/imageSeven.jpg" class="rounded-md h-[400px] w-[100%] object-contain" alt="">
+                  <div class="theicon">
+                    <i class="fa-solid fa-play fa-bounce"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">100M</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">100M</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">100M</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">100M</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- First -->
+            <!-- First Content -->
+            <div class="box p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-2 relative direction">
+                <img src="image/content/1.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-lg arabic">المصحف</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@AlMoshaf, 44m</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <img src="image/content/imageOne.webp" class="rounded-md h-[400px] w-[100%] object-cover" alt="">
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">49</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.800</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">2000</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.3K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- First -->
+            <!-- Second -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/2.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-lg arabic">ادعية</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@Ad3ya, 50m</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <img src="image/content/imageTwo.webp" class="rounded-md h-[400px] w-[100%] object-cover" alt="">
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">30</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.400K</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">2K</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.1K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Second -->
+            <!-- Third -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/3.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-lg arabic">وعي</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@W3ay, 2 Day's Ago</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic">﴿وَقُرْآنَ الْفَجْرِ إِنَّ قُرْآنَ الْفَجْرِ كَانَ مَشْهُودًا﴾</h2>
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">60</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1K</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.500K</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Third -->
+            <!-- Four -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/1.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-lg arabic">المصحف</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@AlMoshaf, 2 min's Ago</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic">{ رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ }</h2>
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">100</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.5K</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">3K</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">4K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Four -->
+            <!-- Five -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/4.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-sm arabic">حضن مسلم</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@Musilm, 50m</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic mb-3">
+                  الحمدالله
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </h2>
+                <img src="image/content/imageThree.webp" class="rounded-md h-[400px] w-[100%] object-contain" alt="">
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">30</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.400K</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">2K</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.1K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Five -->
+            <!-- Family -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/user.webp" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-sm arabic">يحي عيسي</h1>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@Yehia, 10s</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name text-white mb-3">
+                  The Brother'S
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </h2>
+                <img src="image/content/family.jpg" class="rounded-md h-[400px] w-[100%] object-contain md:object-cover lg:object-cover" alt="">
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">30</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.400K</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">2K</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.1K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Five -->
+            <!-- Six -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/5.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-sm arabic">النادي الاهلي</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@AlAhly, 50m</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic mb-3">راحبوا معانا بالوفد الجديد رضا سليم</h2>
+                <div class="image flex gap-2">
+                  <img src="image/content/imageFive.jpg"
+                    class="ahaly rounded-md basis-2/4 max-h-[300px] w-[48%] lg:w-[100%] object-contain md:object-cover cursor-pointer lg:object-cover"
+                    alt="">
+                  <img src="image/content/imageSix.jpg"
+                    class="ahaly rounded-md basis-2/4 max-h-[300px] w-[48%] lg:w-[100%] object-contain md:object-cover cursor-pointer lg:object-cover"
+                    alt="">
+                </div>
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">50</span>
+                </div>
+                <div class="item retweet flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">3.400K</span>
+                </div>
+                <div class="item love flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.500K</span>
+                </div>
+                <div class="item view flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.3K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Six -->
+            <!-- Six -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/6.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-sm arabic">ادعية & تسبيح</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@Ad3ya, 50m</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic">
+                  ﴿ وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ ﴾
+                  <br>
+                  - سُبحان الله .
+                  <br>
+                  - الحَمدُ لله .
+                  <br>
+                  - لا إله إلا الله .
+                  <br>
+                  - الله أكبر .
+                  <br>
+                  - أستغفِرُ الله .
+                  <br>
+                  - لا حَول و لا قوة إلا بالله .
+                  <br>
+                  - سُبحان الله و بِحمده .
+                  <br>
+                  - سُبحان الله العَظيم .
+                  <br>
+                  - اللهم صلِّ و سلِّم على نبينا محمد .
+                </h2>
+              </div>
+              <div class="likes mt-3 flex items-center justify-between">
+                <div class="item replay flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">100</span>
+                </div>
+                <div class="item retweet flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">6.400K</span>
+                </div>
+                <div class="item love flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">8.500K</span>
+                </div>
+                <div class="item view flex items-center gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">9.3K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Six -->
+            <!-- Seven -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/8.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-sm arabic">انسان</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@Ensn, 2 Day's Ago</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic mb-3">
+                  "رَبِّ لَاتَذَرْنِي فَرْدًا وَأَنتَ خَيْرُ ٱلْوَٰرِثِينَ ".
+                  <i class="fa-solid fa-heart"></i>
+                </h2>
+                <img src="image/content/imagekid.webp" class="rounded-md h-[400px] w-[100%] object-contain" alt="">
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">200</span>
+                </div>
+                <div class="item retweet flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">6.600K</span>
+                </div>
+                <div class="item love flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">5.500K</span>
+                </div>
+                <div class="item view flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">10.3K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Seven -->
+            <!-- eight -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/content/3.jpg" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-sm arabic">وعي</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@W3ay, 1 Day's Ago</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic mb-3">
+                  يا رب
+                  <i class="fa-solid fa-heart"></i>
+                  🌿
+                </h2>
+                <img src="image/content/imageFour.webp" class="rounded-md h-[400px] w-[100%] object-cover" alt="">
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">100</span>
+                </div>
+                <div class="item retweet flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">5.600K</span>
+                </div>
+                <div class="item love flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1.500K</span>
+                </div>
+                <div class="item view flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">5.3K</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End eight -->
+            <!-- nine -->
+            <div class="box mt-2 p-2 border-b border-b-[#1c1c1c]">
+              <div class="head flex items-center gap-2 mb-3 relative direction">
+                <img src="image/user.webp" class="w-10 rounded-full" alt="">
+                <a href="#content" class="flex gap-1">
+                  <h1 class="text-white mb-0 font-bold mt-1 text-sm arabic">يوسف عادل</h1>
+                  <i class='bx bx-badge-check checkImage text-[#2196f3] text-xl'></i>
+                </a>
+                <span class="text-[#fff3] text-sm dir-ltr">@YAdeL, 1s Ago</span>
+                <i
+                  class='bx bx-dots-horizontal-rounded text-white mr-auto text-2xl cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-[#1c1c1c]'></i>
+              </div>
+              <div class="new">
+                <h2 class="name arabic mb-3">
+                  الغالي
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </h2>
+                <img src="image/content/expensive.jpg" class="rounded-md h-[400px] w-[100%] object-contain" alt="">
+              </div>
+              <div class="likes mt-3 flex items-center justify-between gap-2">
+                <div class="item replay flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-reply text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1M</span>
+                </div>
+                <div class="item retweet flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-solid fa-retweet text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1M</span>
+                </div>
+                <div class="item love flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-heart text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1M</span>
+                </div>
+                <div class="item view flex items-center gap-1 md:gap-2 lg:gap-2 w-16 justify-center rounded-sm cursor-pointer">
+                  <div class="icon">
+                    <i class="fa-regular fa-eye text-[#fff3]"></i>
+                  </div>
+                  <span class="text-[#fff3]">1M</span>
+                </div>
+                <div class="item cursor-pointer download justify-center flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[#fff3]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End nine -->
+          </div>
+          <!-- End Content -->
+          <!-- Start Spin -->
+          <div class="boxSpin p-4 flex items-center justify-center">
+            <span class="loader"></span>
+          </div>
+          <!-- End Spin -->
+        </section>
+        <section class="right-content w-[25%] h-full hidden lg:block"></section>
+      </div>
+      <!--ToDO Start Content -->
+    </div>
+  </div>
+
+  <!-- LightImage -->
+  <div class="lightImage">
+    <div class="image">
+      <i class="fa-solid fa-x closed"></i>
+      <img src="" alt="">
+    </div>
+  </div>
+  <!-- End LightImage -->
+  <!-- LightImage -->
+  <div class="lightVideo">
+    <i class="fa-solid fa-x closed"></i>
+    <div class="video">
+      <video src="Video/vid1.mp4" controls loop alt="">
+    </div>
+  </div>
+  <!-- End LightImage -->
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
