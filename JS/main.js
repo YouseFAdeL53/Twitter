@@ -68,9 +68,6 @@ videoClosed.onclick = function () {
 let preLoader = document.querySelector(".preloader");
 
 window.addEventListener("load", () => {
-  document.body.style.overflow = "hidden";
-  setTimeout(() => {
     preLoader.classList.add("loaded");
     document.body.style.overflow = "auto";
-  }, 1500)
 })
